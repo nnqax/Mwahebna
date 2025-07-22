@@ -6,7 +6,7 @@
     <title>فرص ومنح - أكتشفها و نميها</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
-        
+
         :root {
             --primary: #2E86AB;
             --secondary: #F5F749;
@@ -14,32 +14,32 @@
             --dark: #0A2463;
             --light: #FFFFFF;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Tajawal', sans-serif;
         }
-        
+
         body {
             background-color: white;
             color: #333;
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             padding: 30px 0;
             text-align: center;
             position: relative;
         }
-        
+
         .back-btn {
             position: absolute;
             left: 20px;
@@ -50,11 +50,11 @@
             display: flex;
             align-items: center;
         }
-        
+
         .back-btn:hover {
             color: var(--accent);
         }
-        
+
         h1 {
             font-size: 3rem;
             font-weight: 900;
@@ -65,7 +65,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         .opportunities-intro {
             text-align: center;
             margin-bottom: 40px;
@@ -75,7 +75,7 @@
             margin-right: auto;
             margin-left: auto;
         }
-        
+
         .opportunities-container {
             display: flex;
             flex-wrap: wrap;
@@ -83,7 +83,7 @@
             justify-content: center;
             margin: 50px 0;
         }
-        
+
         .opportunity-card {
             background: white;
             border-radius: 15px;
@@ -95,60 +95,60 @@
             position: relative;
             display: block; /* Default show all cards */
         }
-        
+
         .opportunity-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(46, 134, 171, 0.2);
         }
-        
+
         .opportunity-card.scholarship {
             border-top-color: var(--primary);
         }
-        
+
         .opportunity-card.internship {
             border-top-color: var(--secondary);
         }
-        
+
         .opportunity-icon {
             font-size: 2.5rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
-        
+
         .opportunity-card h2 {
             font-size: 1.8rem;
             margin-bottom: 15px;
             color: var(--dark);
         }
-        
+
         .opportunity-card p {
             color: #666;
             margin-bottom: 20px;
             min-height: 80px;
         }
-        
+
         .opportunity-details {
             margin: 20px 0;
             padding: 15px;
             background: #f9f9f9;
             border-radius: 8px;
         }
-        
+
         .detail-item {
             display: flex;
             margin-bottom: 10px;
         }
-        
+
         .detail-label {
             font-weight: bold;
             color: var(--primary);
             min-width: 120px;
         }
-        
+
         .detail-value {
             color: #666;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -163,29 +163,29 @@
             font-size: 1rem;
             box-shadow: 0 5px 15px rgba(46, 134, 171, 0.3);
         }
-        
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(46, 134, 171, 0.4);
         }
-        
+
         .btn-outline {
             background: white;
             color: var(--primary);
             border: 2px solid var(--primary);
         }
-        
+
         .btn-outline:hover {
             background: var(--primary);
             color: white;
         }
-        
+
         .btn-active {
             background: var(--primary); /* Use only the primary color */
             color: white;
             border: 2px solid var(--primary);
         }
-        
+
         .filter-buttons {
             display: flex;
             justify-content: center;
@@ -193,33 +193,33 @@
             margin: 30px 0;
             flex-wrap: wrap;
         }
-        
+
         footer {
             text-align: center;
             padding: 50px 0 30px;
             color: #666;
         }
-        
+
         /* Hide cards by default for filtering */
         .scholarship-type { display: none; }
         .internship-type { display: none; }
         .competition-type { display: none; }
-        
+
         /* Show cards when filtered */
         .show-scholarships .scholarship-type { display: block; }
         .show-internships .internship-type { display: block; }
         .show-competitions .competition-type { display: block; }
         .show-all .opportunity-card { display: block; }
-        
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.2rem;
             }
-            
+
             .opportunity-card {
                 width: 100%;
             }
-            
+
             .back-btn {
                 position: static;
                 margin-bottom: 20px;
@@ -235,20 +235,98 @@
             <h1>الفرص والمنح</h1>
             <p class="opportunities-intro">اكتشف أحدث الفرص والمنح المتاحة لتطوير مواهبك ومهاراتك في مختلف المجالات</p>
         </header>
-        
+
         <div class="filter-buttons">
             <button class="btn btn-active" data-filter="all">الكل</button>
             <button class="btn btn-outline" data-filter="scholarship">منح دراسية</button>
             <button class="btn btn-outline" data-filter="internship">تدريبات</button>
             <button class="btn btn-outline" data-filter="competition">مسابقات</button>
         </div>
-        
+
+
+
+
         <div class="opportunities-container">
+
+
+            <div class="opportunity-card competition-type" data-category="competition">
+                <div class="opportunity-icon">🏆</div>
+                <h2> Foyle Young poets of the year awards 2025 </h2>
+                <p>لو سنك بين ال11 و ال17 سنه و بتحب الكتابة و الشعر متضيعش الفرصة ديه</p>
+
+                <div class="opportunity-details">
+                    <div class="detail-item">
+                        <span class="detail-label">آخر موعد:</span>
+                        <span class="detail-value"> 31 يوليو 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">المجال:</span>
+                        <span class="detail-value">الشعر</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الجوائز:</span>
+                        <span class="detail-value">عضويات مجانية في مجلس الشعر البريطاني لسنه و كتب معروفة عالميا و فرص نشر و عروض شعرية و تدريبات مدفوهة و المزيد!</span>
+                    </div>
+                </div>
+
+                <a href="https://foyleyoungpoets.org/apply/" class="btn">التقديم الآن</a>
+            </div>
+
+
+            <div class="opportunity-card competition-type" data-category="competition">
+                <div class="opportunity-icon">🏆</div>
+                <h2>Breakthrough Junior Challenge</h2>
+                <p>مسابقة عالمية للشباب من سن 13 ل18 لتبسيط مفهوم علمي صعب في خلال 90 ثانية ل3 دقائق</p>
+
+                <div class="opportunity-details">
+                    <div class="detail-item">
+                        <span class="detail-label">آخر موعد:</span>
+                        <span class="detail-value"> 15 سبتمبر 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">المجال:</span>
+                        <span class="detail-value">الفيزياء, الرياضيات, علوم الحياة و التكنولوجيا الحيوية</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الجوائز:</span>
+                        <span class="detail-value">تصل ل $250,000</span>
+                    </div>
+                </div>
+
+                <a href="https://breakthroughjuniorchallenge.org" class="btn">التقديم الآن</a>
+            </div>
+
+
+
+             <div class="opportunity-card competition-type" data-category="competition">
+                <div class="opportunity-icon">🏆</div>
+                <h2> International Math Bowl 2025</h2>
+                <p>مسابقة دولية اونلاين في حل المشكلات الرياضية مفتوحة لطلبة الاعدادية و الثانوية من كل الدول بدون اي رسوم</p>
+
+                <div class="opportunity-details">
+                    <div class="detail-item">
+                        <span class="detail-label">آخر موعد:</span>
+                        <span class="detail-value">30 سبتمبر 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">المجال:</span>
+                        <span class="detail-value">الرياضيات</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الجوائز:</span>
+                        <span class="detail-value">غير محددة حاليا</span>
+                    </div>
+                </div>
+
+                <a href="https://www.internationalmathbowl/.com" class="btn">التقديم الآن</a>
+            </div>
+
+
             <div class="opportunity-card internship-type" data-category="internship">
                 <div class="opportunity-icon">💼</div>
-                <h2>برنامج Lumiere Research Scholar</h2>
+                <h2> Lumiere Research Scholar Program</h2>
                 <p>فرصة تدريبية من 12 الى 20 أسبوع في أفضل البرامج الدولية</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -263,14 +341,14 @@
                         <span class="detail-value">Lumier </span>
                     </div>
                 </div>
-                
+
                 <a href="https://www.lumiere-education.com/students-application-form" class="btn">التقديم الآن</a>
             </div>
             <div class="opportunity-card internship-type" data-category="internship">
                 <div class="opportunity-icon">💼</div>
-                <h2>برنامج ريادة أعمال</h2>
+                <h2>Open Innovation Challenge 2025</h2>
                 <p>فرصة تدريبية لمدة 40 يوم في أفضل الشركات الدولية</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -285,15 +363,15 @@
                         <span class="detail-value">Elia group</span>
                     </div>
                 </div>
-                
+
                 <a href="https://form.typeform.com/to/q8ubSN84?typeform-source=innovation.eliagroup.eu" class="btn">التقديم الآن</a>
             </div>
-            
+
             <div class="opportunity-card competition-type" data-category="competition">
                 <div class="opportunity-icon">🏆</div>
-                <h2>مسابقة  Nasa Space Apps </h2>
+                <h2>مسابقة  Nasa Space Apps : Assiut </h2>
                 <p>شارك موهبتك واحصل على فرصة للاعتراف بموهبتك عالميا ودعم لمشروعك</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -308,14 +386,14 @@
                         <span class="detail-value"><a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/">تتعدد الجوائز على حسب المجال</a></span>
                     </div>
                 </div>
-                
+
                 <a href="https://www.spaceappschallenge.org/2025/local-events/assiut/" class="btn">التقديم الآن</a>
             </div>
               <div class="opportunity-card competition-type" data-category="competition">
                 <div class="opportunity-icon">🏆</div>
-                <h2>مسابقة Cyber security </h2>
+                <h2>EYCC Cybersecurity challenge</h2>
                 <p>Whether you’re a complete beginner or just _curious_ about cybersecurity, EYCC is designed to help you learn as you play. We are providing beginner-friendly resources to guide you — all you need is curiosity and a willingness to explore</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -330,15 +408,15 @@
                         <span class="detail-value">غير محددة حتى الان</span>
                     </div>
                 </div>
-                
+
                 <a href="https://eycc.stemeghackclub.org" class="btn">التقديم الآن</a>
             </div>
-            
+
              <div class="opportunity-card competition-type" data-category="competition">
                 <div class="opportunity-icon">🏆</div>
-                <h2>مسابقة  Physics </h2>
+                <h2> IPHR Physics Competition</h2>
                 <p>Are you a high school student ready to challenge yourself and compete on a global scale? IPhR is your chance to showcase your physics skills, grow your knowledge, and connect with talented young minds from around the world.</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -350,17 +428,17 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">الجوائز:</span>
-                        <span class="detail-value">25,000$ of Software and coupons </span>
+                        <span class="detail-value">+25,000$ worth of Software and coupons </span>
                     </div>
                 </div>
-                
+
                 <a href="https://iphr.octphysicsclub.org/" class="btn">التقديم الآن</a>
             </div>
               <div class="opportunity-card competition-type" data-category="competition">
                 <div class="opportunity-icon">🏆</div>
                 <h2> 🎨Art on climate مسابقة  رسم </h2>
                 <p>لو بتحب ترسم أو تعمل فيديوهات قصيرة عن المناخ، دي مسابقة مميزة جدا ليك🤩</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -375,14 +453,14 @@
                         <span class="detail-value">تصل الى 2000 يورو</span>
                     </div>
                 </div>
-                
+
                 <a href="https://www.artonclimate.com/" class="btn">التقديم الآن</a>
             </div>
             <div class="opportunity-card scholarship-type" data-category="scholarship">
                 <div class="opportunity-icon">🌍</div>
                 <h2>University of Alberta Scholarships 2025 in Canada (Fully Funded)</h2>
                 <p>فرصة للدراسة في جامعة كندية العالمية مع تغطية كاملة للتكاليف</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -390,21 +468,21 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">المجال:</span>
-                        <span class="detail-value">دكتوراه وماجيستير و ثانوية</span>
+                        <span class="detail-value">طلاب الجامعة و الماجستير و الجامعه</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">الممول:</span>
                         <span class="detail-value">Alberta University </span>
                     </div>
                 </div>
-                
+
                 <a href="https://brightscholarship.com/university-of-alberta-scholarships-canada-2025/" class="btn">التقديم الآن</a>
             </div>
                 <div class="opportunity-card scholarship-type" data-category="scholarship">
                 <div class="opportunity-icon">🌍</div>
                 <h2>منحة ساويرس للتفوق لخريجي الثانوية العامة</h2>
                 <p>منحة ساويرس للتفوق (مسار خريجي الثانوية العامة) هي منحة دراسية ممولة بالكامل تهدف إلى إتاحة فرص متكافئة لحوالي 50 من الطلاب المصريين المتفوقين للحصول على تعليم جامعي عالي الجودة في مجموعة مختارة من الجامعات المصرية الرائدة في مصر.</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -419,14 +497,18 @@
                         <span class="detail-value">مؤسسة سويرس</span>
                     </div>
                 </div>
-                
+
                 <a href="https://www.surveymonkey.com/r/NK3Y3BC?fbclid=PAQ0xDSwLi5Q1leHRuA2FlbQIxMQABp_ws_xYo5X2atDBgrL7QoLEiwWd8gv5_ssVfUOX-hFt3Yv9yuQ_8zNjXfhgb_aem_Jc68s2CclJ53KR_3qC8gEQ" class="btn">التقديم الآن</a>
             </div>
+
+
                 <div class="opportunity-card scholarship-type" data-category="scholarship">
                 <div class="opportunity-icon">🌍</div>
                 <h2>منحة ساویرس للتفوق للطلاب ذوي الإعاقة</h2>
                 <p>تقدم مؤسسة ساويرس للتنمية الاجتماعية 10 منح دراسية للطلاب والطالبات ذوي الإعاقة من خریجي الثانوية العامة وما یعادلھا على مستوى الجمهورية وذلك للالتحاق بإحدى الجامعات المرموقة داخل جمهورية مصر العربية للحصول على شهادة البكالوريوس.</p>
-                
+
+
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -441,14 +523,40 @@
                         <span class="detail-value">مؤسسة سويرس</span>
                     </div>
                 </div>
-                
+
                 <a href="https://www.surveymonkey.com/r/H3F626P" class="btn">التقديم الآن</a>
             </div>
+
+
+
+<div class="opportunity-card competition-type" data-category="competition">
+                <div class="opportunity-icon">🏆</div>
+                <h2> ChallengeUS Future Leaders competition</h2>
+                <p>فرصة للشباب اللي بيحبوا يعبروا عن افكارهم و عندهم خيال واسع و نظرة مختلفة للمستقبل,جهز فكرتك و انضم للمسابقة ديه</p>
+
+                <div class="opportunity-details">
+                    <div class="detail-item">
+                        <span class="detail-label">آخر موعد:</span>
+                        <span class="detail-value">25 يوليو 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">المجال:</span>
+                        <span class="detail-value">الكتابة و العرض التقديمي</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الجوائز:</span>
+                        <span class="detail-value">500$</span>
+                    </div>
+                </div>
+
+                <a href="https://www.challegeusnow.org/competitions/summer-2025" class="btn">التقديم الآن</a>
+            </div>
+
             <div class="opportunity-card scholarship-type" data-category="scholarship">
                 <div class="opportunity-icon">🌍</div>
-                <h2>African leader ship Academy</h2>
+                <h2>African leadership Academy</h2>
                 <p>أكاديمية القيادة الأفريقية (ALA)، تأسست 2004 في جنوب أفريقيا، تهدف لبناء قادة أفارقة متميزين. تجمع شبابًا موهوبين من أنحاء القارة، وتقدم برنامجًا مكثفًا لمدة عامين يجمع التميز الأكاديمي والقيادة الأخلاقية. تهدف لتشكيل مستقبل أفريقيا عبر شبكة قوية من القادة المبدعين.</p>
-                
+
                 <div class="opportunity-details">
                     <div class="detail-item">
                         <span class="detail-label">آخر موعد:</span>
@@ -463,12 +571,15 @@
                         <span class="detail-value">ALA </span>
                     </div>
                 </div>
-                
+
                 <a href="https://ala2.submittable.com/submit" class="btn">التقديم الآن</a>
             </div>
         </div>
     </div>
-    
+
+
+
+
     <footer>
         <p>© 2025 مستقبل يبدأ بموهبة. جميع الحقوق محفوظة.</p>
     </footer>
@@ -478,27 +589,27 @@
             const filterButtons = document.querySelectorAll('.filter-buttons .btn');
             const opportunityCards = document.querySelectorAll('.opportunity-card');
             const opportunitiesContainer = document.querySelector('.opportunities-container');
-            
+
             // Set initial state - show all cards
             opportunitiesContainer.classList.add('show-all');
-            
+
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const filterValue = this.getAttribute('data-filter');
-                    
+
                     // Remove active class from all buttons
                     filterButtons.forEach(btn => {
                         btn.classList.remove('btn-active');
                         btn.classList.add('btn-outline');
                     });
-                    
+
                     // Add active class to clicked button
                     this.classList.remove('btn-outline');
                     this.classList.add('btn-active');
-                    
+
                     // Remove all show classes
                     opportunitiesContainer.classList.remove('show-all', 'show-scholarships', 'show-internships', 'show-competitions');
-                    
+
                     // Add appropriate show class based on filter
                     switch(filterValue) {
                         case 'all':
